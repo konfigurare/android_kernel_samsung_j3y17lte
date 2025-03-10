@@ -1,0 +1,3 @@
+kernel/drivers/sensors/k2hh.ko
+kernel/drivers/sensors/gp2ap070s.ko
+kernel/drivers/sensors/stk3013.ko

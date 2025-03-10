@@ -7,11 +7,11 @@
 // -I arch/arm64/include/generated -I include -I ./arch/arm64/include/uapi
 // -I arch/arm64/include/generated/uapi -I ./include/uapi
 // -I include/generated/uapi
-// -iprefix /home/dpi/qb5_8814/workspace/P4_1716/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x/
-// -D __KERNEL__ -D ANDROID_VERSION=90000 -D ANDROID_MAJOR_VERSION=p
-// -D KBUILD_STR(s)=#s -D KBUILD_BASENAME=KBUILD_STR(devicetable_offsets)
+// -iprefix /home/konfigurare/kernel_toolchains/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x/
+// -D __KERNEL__ -D ANDROID_VERSION=990000 -D KBUILD_STR(s)=#s
+// -D KBUILD_BASENAME=KBUILD_STR(devicetable_offsets)
 // -D KBUILD_MODNAME=KBUILD_STR(devicetable_offsets)
-// -isystem /home/dpi/qb5_8814/workspace/P4_1716/android/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x/include
+// -isystem /home/konfigurare/kernel_toolchains/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x/include
 // -include ./include/linux/kconfig.h
 // -MD scripts/mod/.devicetable-offsets.s.d
 // scripts/mod/devicetable-offsets.c -mbionic -mlittle-endian
@@ -23,7 +23,7 @@
 // -Wdeclaration-after-statement -Wno-pointer-sign -Werror=implicit-int
 // -Werror=strict-prototypes -Werror=date-time -std=gnu90
 // -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks
-// -fno-PIE -fstack-protector-strong -fno-omit-frame-pointer
+// -fno-PIE -fno-stack-protector -fno-omit-frame-pointer
 // -fno-optimize-sibling-calls -fno-var-tracking-assignments
 // -fno-strict-overflow -fstack-check=no -fconserve-stack -fverbose-asm
 // --param allow-store-data-races=0
@@ -50,12 +50,11 @@
 // -fsched-rank-heuristic -fsched-spec -fsched-spec-insn-heuristic
 // -fsched-stalled-insns-dep -fschedule-insns2 -fsection-anchors
 // -fshow-column -fshrink-wrap -fsigned-zeros -fsplit-ivs-in-unroller
-// -fsplit-wide-types -fstack-protector-all -fstack-protector-strong
-// -fstrict-enum-precision -fstrict-volatile-bitfields -fsync-libcalls
-// -fthread-jumps -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp
-// -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars
-// -ftree-copy-prop -ftree-copyrename -ftree-cselim -ftree-dce
-// -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
+// -fsplit-wide-types -fstrict-enum-precision -fstrict-volatile-bitfields
+// -fsync-libcalls -fthread-jumps -ftoplevel-reorder -ftrapping-math
+// -ftree-bit-ccp -ftree-builtin-call-dce -ftree-ccp -ftree-ch
+// -ftree-coalesce-vars -ftree-copy-prop -ftree-copyrename -ftree-cselim
+// -ftree-dce -ftree-dominator-opts -ftree-dse -ftree-forwprop -ftree-fre
 // -ftree-loop-if-convert -ftree-loop-im -ftree-loop-ivcanon
 // -ftree-loop-optimize -ftree-loop-vectorize -ftree-parallelize-loops=
 // -ftree-phiprop -ftree-pre -ftree-pta -ftree-reassoc -ftree-scev-cprop
@@ -982,8 +981,8 @@ main:
 	.string	"main"
 .LASF12:
 	.ascii	"GNU C 4.9.x 20150123 (prerelease) -mbionic -mlittle-endian -"
-	.ascii	"mgeneral-regs-only -mabi=lp64 -g -Os -std=gnu90 -fno-strict-"
-	.string	"aliasing -fno-common -fno-delete-null-pointer-checks -fno-PIE -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -fno-strict-overflow -fstack-check=no -fconserve-stack --param allow-store-data-races=0"
+	.ascii	"mgeneral-regs-only -mabi=lp64 -g -Os -std=gnu90 -fno-str"
+	.string	"ict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-PIE -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -fno-strict-overflow -fstack-check=no -fconserve-stack --param allow-store-data-races=0"
 .LASF7:
 	.string	"long unsigned int"
 .LASF6:
@@ -995,7 +994,7 @@ main:
 .LASF10:
 	.string	"long int"
 .LASF14:
-	.string	"/home/dpi/qb5_8814/workspace/P4_1716/android/kernel/exynos7570"
+	.string	"/home/konfigurare/Documents/GitHub/android_kernel_samsung_j3y17lte"
 .LASF11:
 	.string	"_Bool"
 .LASF3:
